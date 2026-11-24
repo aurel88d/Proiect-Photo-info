@@ -1,0 +1,229 @@
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+    background-color: #121212;
+     color: rgb(247, 242, 242);
+}
+
+.fundal {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: 
+             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+             url("img/pisica.jpg") center/cover no-repeat;
+
+             color: #e1dada;
+}
+.logo{
+    width: 60px;
+    height: 30px;
+    
+}
+
+header{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items:center;
+     
+}
+ nav{
+      display: flex;
+      gap:25px;
+ }
+ nav a{
+      color:aliceblue;
+      text-decoration: none;
+ }
+
+.despre {
+    padding: 48px;
+    margin: 10px;
+    display: flex;
+    background-color: #191818;
+    color: #ffffff;
+}
+
+.despre-continut {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.despre-text {
+    flex: 1;
+}
+
+.despre-poza {
+    flex: 0 1 280px;
+    padding: 8px;
+    border: 2px solid #e1dada;
+    border-radius: 8px;
+}
+
+.despre-poza img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .despre {
+        padding: 24px;
+    }
+
+    .despre-continut {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .despre-poza {
+        flex-basis: auto;
+        max-width: 280px;
+        align-self: center;
+    }
+ 
+}
+ 
+.port-img{
+     display: flex;
+     gap: 30px;
+}
+.card{ 
+     flex: 1;
+     border: 2px solid #e1dada;
+     border-radius: 16px;
+     overflow: hidden;
+     color: #e1dada;
+     text-decoration: none;
+}
+.card img{
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     transition: transform 0.4s;
+}
+
+.card:hover{
+     background-color: rgb(34, 34, 34);
+     cursor: pointer;
+     transform: scale(1.1)
+     
+}
+.poze{
+    
+     display: flexbox;
+     
+}
+
+
+.portret{
+    display: flex;
+    gap: 30px;
+}
+.portret img{
+    flex: 1;
+    border: 2px solid rgb(71, 70, 70);
+    border: 2px rgb(71, 70, 70);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       background-color: #191818;
+
+}
+
+.preturi{
+    display: flex;
+    gap: 20px;
+    padding: 48px;
+    
+}
+
+
+.price {
+    
+    flex: 1;
+    border: 2px solid #444;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    background-color: rgb(67, 49, 123);
+    
+}
+
+/* secțiunea mare */
+.preturi-home {
+    padding: 48px;
+    text-align: center;
+}
+
+/* containerul flex: pune cardurile pe rând */
+.preturi-rand {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* un card */
+.pret-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #444;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* partea de sus: descrierea */
+.card-sus {
+    flex: 1;
+    padding: 24px;
+}
+
+/* partea de jos: prețul și butonul */
+.card-jos {
+    background: #e1dada;
+    color: #121212;
+    padding: 20px;
+    border-top: 2px solid #444;
+}
+
+.pret {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+/* butonul "Mai multe detalii" */
+.buton-card {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #121212;
+    color: #e1dada;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.buton-card:hover {
+    background: #333;
+}
+
+/* telefon: cardurile una sub alta */
+@media (max-width: 800px) {
+    .preturi-rand {
+        flex-direction: column;
+    }
+}
